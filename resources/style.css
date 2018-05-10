@@ -1,0 +1,49 @@
+/* WHEN WE LAST CHECKED OUR HERO HAD...
+
+*/
+* {
+  font-family: Helvetica;
+  font-size: 22px;
+  color: seashell;
+  background-color: black;
+  opacity: 0.9;
+  text-align: center;
+}
+
+/* Header Container*/
+.header-container {
+  display: flex;
+  height: 69px;
+  width: 100%;
+  border-bottom: 1px solid seashell;
+  position: fixed;
+  z-index: 10;
+}
+
+/*Attempting to add buffer space between logo and nav*/
+.tclogo {
+  display: flex;
+  flex-grow: 1;
+}
+
+/* Logo image details and alignment*/
+.tclogo img {
+  height: 50px;
+  padding-left: 10px;
+}
+
+/*Alignment of Nav items to top right*/
+.nav-items {
+  display: flex;
+/*  text-decoration: underline;*/
+  padding-right: 10px;
+}
+
+/*Spacing and display of Nav Items*/
+.nav-items span {
+  display: inline-block;
+  padding: 20px 10px;
+}
+/**/
+/**/
+/**/
