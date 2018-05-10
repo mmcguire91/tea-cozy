@@ -1,6 +1,16 @@
-/* WHEN WE LAST CHECKED OUR HERO HAD...
+/*
+WHEN WE LAST CHECKED OUR HERO HAD...
+-Completed all HTML formatting
+-Completed the Nav bar
+
+
+AND WAS TRYING TO:
+-Close the gap at the very top of the Nav bar
+-Center the background of Our mission
+-Trying to figure out why the H2 and H4 of 'Our Mission' is not displaying
 
 */
+
 * {
   font-family: Helvetica;
   font-size: 22px;
@@ -18,6 +28,7 @@
   border-bottom: 1px solid seashell;
   position: fixed;
   z-index: 10;
+  background-color: black;
 }
 
 /*Attempting to add buffer space between logo and nav*/
@@ -44,6 +55,24 @@
   display: inline-block;
   padding: 20px 10px;
 }
+
+/*Mission Container*/
+.mission-container {
+  padding-top: 69px;
+  height: 700px;
+  width: 1200px;
+  display: flex;
+  justify-content: space-around;
+  background-image: url("./images/mission-background.jpg");
+}
+
 /**/
+.mission-bar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+  width: 100%;
+}
 /**/
 /**/
