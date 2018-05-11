@@ -2,12 +2,30 @@
 WHEN WE LAST CHECKED OUR HERO HAD...
 -Completed all HTML formatting
 -Completed the Nav bar
+-Completed Our Mission Div Container
 
 
 AND WAS TRYING TO:
--Close the gap at the very top of the Nav bar
--Center the background of Our mission
--Trying to figure out why the H2 and H4 of 'Our Mission' is not displaying
+-Trying to figure out why the H2 and H4 of all content is not displaying correctly
+-Fix gap at very top of the Header bar
+
+WHAT I'VE LEARNED:
+-The Flexbox properties MUST go in the flex container to align the flex items
+-->You cannot self-align a flex item, in order to align flex item (A) you must create a partent container (B) and then put the alignment properties in the parent container (B)
+--> Only characteristic properties (i.e. sizing) can be self-imposed on a flex item (A)
+   Ex. B {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      }
+      A {
+      height: 100px;
+      width: 300px;
+      padding: 20px (top&bottom) 10px (sides);
+      margin: auto;
+      border: 1px solid seashell;
+      }
+-Item
 
 */
 
@@ -56,23 +74,68 @@ AND WAS TRYING TO:
   padding: 20px 10px;
 }
 
-/*Mission Container*/
+/*Main Content 1 - Aligning 'Mission' Container to center*/
+.main-content1 {
+  display: flex;
+  justify-content: center;
+}
+
+/*Mission Container - Aligning 'Mission Image'to center of 'mission-container' */
 .mission-container {
   padding-top: 69px;
   height: 700px;
   width: 1200px;
   display: flex;
-  justify-content: space-around;
-  background-image: url("./images/mission-background.jpg");
+  justify-content: center;
 }
 
-/**/
-.mission-bar {
+/*Mission Image - Displys Image of Oats and Aligns the 'mission-bar' in the center of the image */
+.mission-image {
+  background-image: url("./images/mission-background.jpg");
+  width: 1200px;
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+/*Mission Bar - sizing*/
+.mission-bar {
   margin: auto;
   width: 100%;
 }
+
+/* Main Content2 - Positioning of Tea OTM Content */
+.main-content2 {
+  display: flex;
+  justify-content: center;
+}
+
+/*Tea of the Month - Sizing Characteristics, Padding*/
+.tea-otm {
+  padding-top: 70px;
+  width: 1000px;
+  border: 4px dashed white;
+}
+
+/* Aligning of Tea Itmes */
+.all-tea {
+  width: 1000px;
+  border: 3px solid blue;
+  display: flex;
+  justify-content: center;
+}
+
+/* Sizing of Tea Elements */
+.tea-item img {
+  height: 200px;
+  width: 300px;
+  margin: 10px;
+}
+
+/**/
+/**/
+/**/
+/**/
+/**/
 /**/
 /**/
