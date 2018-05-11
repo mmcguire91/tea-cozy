@@ -4,6 +4,7 @@ WHEN WE LAST CHECKED OUR HERO HAD...
 -Completed the Nav bar
 -Completed Our Mission Div Container
 -Completed Tea of the Month Div Container
+-Completed Footer
 
 AND WAS TRYING TO:
 -Figure out why the H2 and H4 of all content is not displaying correctly
@@ -26,8 +27,6 @@ WHAT I'VE LEARNED:
       margin: auto;
       border: 1px solid seashell;
       }
--Item
-
 */
 
 * {
@@ -168,7 +167,13 @@ WHAT I'VE LEARNED:
   opacity: 1;
   border: 1px solid seashell;
 }
-/**/
+
+/*Copyright Container*/
+.copyright {
+  display: flex;
+  justify-content: flex-start;
+
+}
 /**/
 /**/
 /**/
