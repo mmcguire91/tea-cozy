@@ -3,11 +3,12 @@ WHEN WE LAST CHECKED OUR HERO HAD...
 -Completed all HTML formatting
 -Completed the Nav bar
 -Completed Our Mission Div Container
-
+-Completed Tea of the Month Div Container
 
 AND WAS TRYING TO:
--Trying to figure out why the H2 and H4 of all content is not displaying correctly
+-Figure out why the H2 and H4 of all content is not displaying correctly
 -Fix gap at very top of the Header bar
+-Get the Location title and Location Boxes to display correctly
 
 WHAT I'VE LEARNED:
 -The Flexbox properties MUST go in the flex container to align the flex items
@@ -114,15 +115,14 @@ WHAT I'VE LEARNED:
 .tea-otm {
   padding-top: 70px;
   width: 1000px;
-  border: 4px dashed white;
 }
 
 /* Aligning of Tea Itmes */
 .all-tea {
   width: 1000px;
-  border: 3px solid blue;
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 /* Sizing of Tea Elements */
@@ -132,9 +132,42 @@ WHAT I'VE LEARNED:
   margin: 10px;
 }
 
-/**/
-/**/
-/**/
+/*Main Content3 - Alignment*/
+.main-content3 {
+  display: flex;
+  justify-content: center;
+  margin-top: 70px;
+  border: 4px dashed white;
+}
+
+/*Locations*/
+.locations {
+  background-image: url("./images/locations-background.jpg");
+  height: 500px;
+  width: 1200px;
+  border: 3px solid yellow;
+}
+
+/*Properties of Location Title*/
+.locations-title {
+  margin-top: 70px;
+  border: 2px solid green;
+}
+
+/*Location Boxes Container - Alignment*/
+.location-boxes-container {
+  display: flex;
+  justify-content: center;
+  border: 2px dashed red;
+}
+
+/*Location Box Items - Properties*/
+.location-box-item {
+  width: 300px;
+  margin: 20px;
+  opacity: 1;
+  border: 1px solid seashell;
+}
 /**/
 /**/
 /**/
